@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+}
+#background {
+    background-image: url('./../assets/levelOnesmall.jpg');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    height: 800px;
+    position: relative;
+    margin: 0 auto
+}
+
+#orion {
+    max-width: 125px;
+    position: absolute;
+    margin: 0 auto;
+}
