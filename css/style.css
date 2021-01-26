@@ -9,9 +9,77 @@ body {
     position: relative;
     margin: 0 auto
 }
-
+h1 {
+    color:mediumorchid;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 #orion {
     max-width: 125px;
     position: absolute;
     margin: 0 auto;
+}
+
+.moves {
+    size: 100px 100px;
+    position: absolute;
+}
+#position1 {
+    top: 40px;
+    left: 245px;
+    color: mediumseagreen;
+    /* size: 100px; */
+    margin: 40px;
+}
+#position2 {
+    top: 0px;
+    left: 445px;
+    color: mediumseagreen;
+    /* size: 100px; */
+    margin: 40px;
+}
+#position3 {
+    top: 105px;
+    left: 623px;
+    color: mediumseagreen;
+    /* size: 100px; */
+    margin: 40px;
+}
+#position4 {
+    top: 235px;
+    left: 377px;
+    color: mediumseagreen;
+    /* size: 100px; */
+    margin: 40px;
+}
+#position5 {
+    top: 222px;
+    left: 139px;
+    color: mediumseagreen;
+    /* size: 100px; */
+    margin: 40px;
+}
+#position6 {
+    top: 165px;
+    left: 260px;
+    color: mediumseagreen;
+    /* size: 100px; */
+    margin: 40px;
+}
+#position7 {
+    top: 515px;
+    left: 312px;
+    color: mediumseagreen;
+    /* size: 100px; */
+    margin: 40px;
+}
+#position8 {
+    top: 344px;
+    left: 540px;
+    color: mediumseagreen;
+    /* size: 100px; */
+    margin: 40px;
+}
+#position9 {
+
 }
