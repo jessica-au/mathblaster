@@ -9,8 +9,7 @@ console.log("page is fully loaded. this will turn into a pop up later")
 //event listener for click on second div
 document.querySelector("#position2").addEventListener('click', () => {
     console.log("position two works")
-}
-)
+});
 // function for creating random addition problem
 // input check ---> if correct answer, prompt pop up 'correct!' and move orion to next position
 // input check --> if incorrect answer, take half a life heart and prompt second chance, third, etc.                                         
