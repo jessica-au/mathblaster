@@ -25,61 +25,64 @@ h1 {
     position: absolute;
 }
 #position1 {
+    top: 10px;
+    left: 20px;
+    color: seagreen;
+    margin: 40px;
+}
+#position2 {
     top: 40px;
     left: 245px;
     color: mediumseagreen;
     /* size: 100px; */
     margin: 40px;
 }
-#position2 {
+#position3 {
     top: 0px;
     left: 445px;
     color: mediumseagreen;
     /* size: 100px; */
     margin: 40px;
 }
-#position3 {
+#position4 {
     top: 105px;
     left: 623px;
     color: mediumseagreen;
     /* size: 100px; */
     margin: 40px;
 }
-#position4 {
+#position5 {
     top: 235px;
     left: 377px;
     color: mediumseagreen;
     /* size: 100px; */
     margin: 40px;
 }
-#position5 {
+#position6 {
     top: 222px;
     left: 139px;
     color: mediumseagreen;
     /* size: 100px; */
     margin: 40px;
 }
-#position6 {
+#position7 {
     top: 165px;
     left: 260px;
     color: mediumseagreen;
     /* size: 100px; */
     margin: 40px;
 }
-#position7 {
+#position8 {
     top: 515px;
     left: 312px;
     color: mediumseagreen;
     /* size: 100px; */
     margin: 40px;
 }
-#position8 {
+#position9 {
     top: 344px;
     left: 540px;
     color: mediumseagreen;
     /* size: 100px; */
     margin: 40px;
-}
-#position9 {
-
 }
