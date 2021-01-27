@@ -17,17 +17,16 @@ body {
    
 }
 h1 {
-    background-color:rgb(73, 36, 77);
-    color:rgb(156, 44, 106);
+    background-color:rgb(31, 15, 43);
+    color:wheat;
+    padding: 10px;
     text-align: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-color:wheat;
+    border-color: wheat;
     border-style:solid;
     border-radius: 8px;
     width:800px;
     margin: 0 auto;
-    /* text-decoration-style: solid;
-    text-emphasis-color: wheat; */
 
 }
 #orion {
