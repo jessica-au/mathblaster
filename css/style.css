@@ -112,11 +112,11 @@ body {
 }
 #livesAnchor {
     text-align: center;
-    top: 495px;
+    top: 515px;
     left: 665px;
     margin: 0px;
     width: 100px;
-    height: 80px;
+    height: 60px;
     padding: 0px 10px;
     border-radius: 8px;
     border-style:solid;
@@ -127,10 +127,10 @@ body {
 }
 #level {
     text-align:center;
-    top: 495px;
+    top: 515px;
     left: 10px;
     width: 100px;
-    height: 80px;
+    height: 60px;
     margin: 0px;
     padding: 0px 10px;
     border-radius: 8px;

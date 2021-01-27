@@ -10,7 +10,11 @@ console.log("page is fully loaded. this will turn into a pop up later")
 //event listener for click on second div
 document.querySelector('#position2').addEventListener('click', () => {
     console.log("position two works")
-    prompt("4 * 4 =" );
+    let answer1 = prompt("4 * 4 =" );
+    console.log(answer1)
+    if (answer1 == 16) {
+        
+    }
     //create if statement for if info == 16 then change opacity of div1 to 0 and opacity of div 2 to 1
 });
     
