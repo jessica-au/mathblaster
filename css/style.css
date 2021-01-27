@@ -41,37 +41,37 @@ h1 {
 }
 #position1 {
     top: 10px;
-    left: 20px;
+    left: 0px;
     color: seagreen;
-    margin: 0px;
+    margin: 2px;
 }
 #position2 {
     top: 40px;
-    left: 245px;
+    left: 225px;
     color: mediumseagreen;
     /* size: 100px; */
-    margin: 0px;
+    margin: 1px;
 }
 #position3 {
     top: 0px;
-    left: 445px;
+    left: 420px;
     color: mediumseagreen;
     /* size: 100px; */
-    margin: 0px;
+    margin: 1px;
 }
 #position4 {
     top: 105px;
-    left: 623px;
+    left: 603px;
     color: mediumseagreen;
     /* size: 100px; */
     margin: 0px;
 }
 #position5 {
     top: 235px;
-    left: 377px;
+    left: 355px;
     color: mediumseagreen;
     /* size: 100px; */
-    margin: 0px;
+    margin: 1px;
 }
 #position6 {
     top: 222px;
