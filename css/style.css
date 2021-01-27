@@ -102,11 +102,13 @@ h1 {
     margin: 0px;
 }
 #livesAnchor {
-    top: 500px;
-    left: 650px;
-    margin: 10px;
+    text-align: center;
+    top: 495px;
+    left: 665px;
+    margin: 0px;
     width: 100px;
-    padding: 5px 10px;
+    height: 80px;
+    padding: 0px 10px;
     border-radius: 8px;
     border-style:solid;
     border-color: wheat;
@@ -115,15 +117,27 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #inputField {
-    top: 500px;
-    left: 5px;
+    text-align:center;
+    top: 495px;
+    left: 10px;
     width: 100px;
-    margin: 10px;
-    padding: 5px 10px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px 10px;
     border-radius: 8px;
     border-style:solid;
     border-color: wheat;
     background-color:mediumseagreen ;
     color:lavenderblush;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input {
+    text-align: center;
+    width: 85px;
+    padding: 5px 5px;
+    border-radius: 8px;
+    border-style:solid;
+    border-color:grey;
+
 }
