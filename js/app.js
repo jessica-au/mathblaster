@@ -7,12 +7,27 @@ console.log("page is fully loaded. this will turn into a pop up later")
 
 //alert('Orion needs help!  Solve the math problems to help him get back to his home planet.')
 });
+// function changeOpacity = () -> {
+// let startLocation = document.querySelector('position1')
+//  if (startLocation.style.opacity === 1) {
+//      startLocation.style.opacity = 0
+//  }
+// }
+//let lives = document.querySelector('#livesAnchor').innerHTML 
+
 //event listener for click on second div
+const position2 = document.querySelector('#position2')
 document.querySelector('#position2').addEventListener('click', () => {
     console.log("position two works")
     let answer1 = prompt("4 * 4 =" );
     console.log(answer1)
-    if (answer1 == 16) {
+    if (answer1 == "16") { 
+        document.querySelector('#position2').style.opacity = 1;
+        document.querySelector('#position1').style.opacity = 0;
+    } else if (answer1 !== "16") {
+        prompt("Oops! Not Quite. Try again.");
+        answer1
+        console.log(answer1)
         
     }
     //create if statement for if info == 16 then change opacity of div1 to 0 and opacity of div 2 to 1
