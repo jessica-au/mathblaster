@@ -46,6 +46,7 @@ h1 {
     margin: 2px;
 }
 #position2 {
+    visibility: hidden;
     top: 40px;
     left: 225px;
     color: mediumseagreen;
@@ -53,6 +54,7 @@ h1 {
     margin: 1px;
 }
 #position3 {
+    visibility: hidden;
     top: 0px;
     left: 422px;
     color: mediumseagreen;
@@ -60,6 +62,7 @@ h1 {
     margin: 1px;
 }
 #position4 {
+    visibility: hidden;
     top: 105px;
     left: 603px;
     color: mediumseagreen;
@@ -67,6 +70,7 @@ h1 {
     margin: 0px;
 }
 #position5 {
+    visibility: hidden;
     top: 235px;
     left: 355px;
     color: mediumseagreen;
@@ -74,6 +78,7 @@ h1 {
     margin: 1px;
 }
 #position6 {
+    visibility: hidden;
     top: 222px;
     left: 115px;
     color: mediumseagreen;
@@ -81,6 +86,7 @@ h1 {
     margin: 1px;
 }
 #position7 {
+    visibility: hidden;
     top: 165px;
     left: 238px;
     color: mediumseagreen;
@@ -88,6 +94,7 @@ h1 {
     margin: 1px;
 }
 #position8 {
+    visibility: hidden;
     top: 505px;
     left: 292px;
     color: mediumseagreen;
@@ -95,6 +102,7 @@ h1 {
     margin: 1px;
 }
 #position9 {
+    visibility: hidden;
     top: 344px;
     left: 520px;
     color: mediumseagreen;
