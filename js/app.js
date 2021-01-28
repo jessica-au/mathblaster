@@ -1,6 +1,8 @@
 let lives= 3;
 
 document.querySelector("#livesLeft").innerHTML = "Lives: 3";
+const position2 = document.querySelector('#position2')
+document.querySelector('#position2').addEventListener('click', handlePromptQuestion2);
 
 // game functions:
 console.log("this works");
@@ -28,6 +30,7 @@ const handlePromptQuestion2 =  (e) => {
         document.querySelector('#position2').style.opacity = 1;
         document.querySelector('#position1').style.opacity = 0;
         document.querySelector('#position2').removeEventListener('click', handlePromptQuestion2);
+        document.querySelector('#position3').addEventListener('click', handlePromptQuestion3);
         return
         } else if (lives <= 1){
             lives--;
@@ -50,6 +53,7 @@ const handlePromptQuestion3 =  (e) => {
         document.querySelector('#position3').style.opacity = 1;
         document.querySelector('#position2').style.opacity = 0;
         document.querySelector('#position3').removeEventListener('click', handlePromptQuestion3);
+        document.querySelector('#position4').addEventListener('click', handlePromptQuestion4);
         return
         } else if (lives <= 1){
             lives--;
@@ -69,6 +73,7 @@ const handlePromptQuestion4 =  (e) => {
         document.querySelector('#position4').style.opacity = 1;
         document.querySelector('#position3').style.opacity = 0;
         document.querySelector('#position4').removeEventListener('click', handlePromptQuestion4);
+        document.querySelector('#position5').addEventListener('click', handlePromptQuestion5);
         return
         } else if (lives <= 1){
             lives--;
@@ -89,6 +94,7 @@ const handlePromptQuestion5 =  (e) => {
         document.querySelector('#position6').style.opacity = 1;
         document.querySelector('#position5').style.opacity = 0;
         document.querySelector('#position5').removeEventListener('click', handlePromptQuestion5);
+        document.querySelector('#position6').addEventListener('click', handlePromptQuestion6);
         return
         } else if (lives <= 1){
             lives--;
@@ -108,6 +114,7 @@ const handlePromptQuestion6 =  (e) => {
         document.querySelector('#position7').style.opacity = 1;
         document.querySelector('#position6').style.opacity = 0;
         document.querySelector('#position6').removeEventListener('click', handlePromptQuestion6);
+        document.querySelector('#position7').addEventListener('click', handlePromptQuestion7);
         return
         } else if (lives <= 1){
             lives--;
@@ -127,6 +134,7 @@ const handlePromptQuestion7 =  (e) => {
         document.querySelector('#position8').style.opacity = 1;
         document.querySelector('#position7').style.opacity = 0;
         document.querySelector('#position7').removeEventListener('click', handlePromptQuestion7);
+        document.querySelector('#position8').addEventListener('click', handlePromptQuestion8);
         return
         } else if (lives <= 1){
             lives--;
@@ -171,23 +179,19 @@ const handlePromptQuestion8 =  (e) => {
 //             alert('Game Over!');
 //             return
 //     } else  { 
-//         lives--;
-//         document.querySelector('#livesLeft').innerHTML = `Lives: ${lives}`;
-//         alert('Oops! Try again.');
-//     }
-// };
-const position2 = document.querySelector('#position2')
-document.querySelector('#position2').addEventListener('click', handlePromptQuestion2);
+    //         lives--;
+    //         document.querySelector('#livesLeft').innerHTML = `Lives: ${lives}`;
+    //         alert('Oops! Try again.');
+    //     }
+    // };
     
-document.querySelector('#position3').addEventListener('click', handlePromptQuestion3);
-
-document.querySelector('#position4').addEventListener('click', handlePromptQuestion4);document.querySelector('#position5').addEventListener('click', handlePromptQuestion5);document.querySelector('#position6').addEventListener('click', handlePromptQuestion6);document.querySelector('#position7').addEventListener('click', handlePromptQuestion7);document.querySelector('#position8').addEventListener('click', handlePromptQuestion8);document.querySelector('#position9').addEventListener('click', handlePromptQuestion9);
-
-// function for creating random addition problem
-// input check ---> if correct answer, prompt pop up 'correct!' and move orion to next position
-// input check --> if incorrect answer, take half a life heart and prompt second chance, third, etc.                                         
+    
+    
+    // function for creating random addition problem
+    // input check ---> if correct answer, prompt pop up 'correct!' and move orion to next position
+    // input check --> if incorrect answer, take half a life heart and prompt second chance, third, etc.                                         
     // if all hearts exhausted, "Game over.  Would you like to try again?"
     // if yes, return to start position
-// continue until last position
-// at home planet, pop up "Thanks for getting me home!"
-// possibly next level?
+    // continue until last position
+    // at home planet, pop up "Thanks for getting me home!"
+    // possibly next level?
