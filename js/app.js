@@ -27,6 +27,7 @@ const handlePromptQuestion2 =  (e) => {
         if (answer1 == "16") { 
         document.querySelector('#position2').style.opacity = 1;
         document.querySelector('#position1').style.opacity = 0;
+        document.querySelector('#position2').removeEventListener('click', handlePromptQuestion2);
         return
         } else if (lives <= 1){
             lives--;
@@ -48,6 +49,7 @@ const handlePromptQuestion3 =  (e) => {
         if (answer1 == "45") { 
         document.querySelector('#position3').style.opacity = 1;
         document.querySelector('#position2').style.opacity = 0;
+        document.querySelector('#position3').removeEventListener('click', handlePromptQuestion3);
         return
         } else if (lives <= 1){
             lives--;
@@ -66,6 +68,7 @@ const handlePromptQuestion4 =  (e) => {
         if (answer1 == "21") { 
         document.querySelector('#position4').style.opacity = 1;
         document.querySelector('#position3').style.opacity = 0;
+        document.querySelector('#position4').removeEventListener('click', handlePromptQuestion4);
         return
         } else if (lives <= 1){
             lives--;
@@ -83,8 +86,9 @@ const handlePromptQuestion5 =  (e) => {
     
     let answer1 = prompt("6 * 8 =");
         if (answer1 == "48") { 
-        document.querySelector('#position5').style.opacity = 1;
-        document.querySelector('#position4').style.opacity = 0;
+        document.querySelector('#position6').style.opacity = 1;
+        document.querySelector('#position5').style.opacity = 0;
+        document.querySelector('#position5').removeEventListener('click', handlePromptQuestion5);
         return
         } else if (lives <= 1){
             lives--;
@@ -101,8 +105,9 @@ const handlePromptQuestion6 =  (e) => {
     
     let answer1 = prompt("2 * 9 =");
         if (answer1 == "45") { 
-        document.querySelector('#position6').style.opacity = 1;
-        document.querySelector('#position5').style.opacity = 0;
+        document.querySelector('#position7').style.opacity = 1;
+        document.querySelector('#position6').style.opacity = 0;
+        document.querySelector('#position6').removeEventListener('click', handlePromptQuestion6);
         return
         } else if (lives <= 1){
             lives--;
@@ -119,8 +124,9 @@ const handlePromptQuestion7 =  (e) => {
     
     let answer1 = prompt("4 * 7");
         if (answer1 == "28") { 
-        document.querySelector('#position7').style.opacity = 1;
-        document.querySelector('#position6').style.opacity = 0;
+        document.querySelector('#position8').style.opacity = 1;
+        document.querySelector('#position7').style.opacity = 0;
+        document.querySelector('#position7').removeEventListener('click', handlePromptQuestion7);
         return
         } else if (lives <= 1){
             lives--;
@@ -137,26 +143,9 @@ const handlePromptQuestion8 =  (e) => {
     
     let answer1 = prompt(" 8 * 3");
         if (answer1 == "24") { 
-        document.querySelector('#position8').style.opacity = 1;
-        document.querySelector('#position7').style.opacity = 0;
-        return
-        } else if (lives <= 1){
-            lives--;
-    document.querySelector('#livesLeft').innerHTML = `Lives: ${lives}`;
-            alert('Game Over!');
-            return
-    } else  { 
-        lives--;
-        document.querySelector('#livesLeft').innerHTML = `Lives: ${lives}`;
-        alert('Oops! Try again.');
-    }
-};
-const handlePromptQuestion9 =  (e) => {
-    
-    let answer1 = prompt(" 3 * 6");
-        if (answer1 == "18") { 
         document.querySelector('#position9').style.opacity = 1;
         document.querySelector('#position8').style.opacity = 0;
+        document.querySelector('#position8').removeEventListener('click', handlePromptQuestion8);
         return
         } else if (lives <= 1){
             lives--;
@@ -169,6 +158,24 @@ const handlePromptQuestion9 =  (e) => {
         alert('Oops! Try again.');
     }
 };
+// const handlePromptQuestion9 =  (e) => {
+    
+//     let answer1 = prompt(" 3 * 6");
+//         if (answer1 == "18") { 
+//         document.querySelector('#position9').style.opacity = 1;
+//         document.querySelector('#position8').style.opacity = 0;
+//         return
+//         } else if (lives <= 1){
+//             lives--;
+//     document.querySelector('#livesLeft').innerHTML = `Lives: ${lives}`;
+//             alert('Game Over!');
+//             return
+//     } else  { 
+//         lives--;
+//         document.querySelector('#livesLeft').innerHTML = `Lives: ${lives}`;
+//         alert('Oops! Try again.');
+//     }
+// };
 const position2 = document.querySelector('#position2')
 document.querySelector('#position2').addEventListener('click', handlePromptQuestion2);
     
