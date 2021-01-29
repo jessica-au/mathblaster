@@ -1,4 +1,4 @@
-const testMode = true;
+const testMode = false;
 let lives = 3;
 
 const orion = document.querySelector("#orion");
@@ -8,8 +8,11 @@ const elseConditions = () => { if (lives <= 1) {
     lives--;
 
     livesUpdate();
-    alert('Game Over!');
-    return
+    let gameOverPrompt = window.confirm('Game Over! Would you like to try again?');
+    
+   if (gameOverPrompt) {
+        window.location.reload();
+    return} else {};
 
 } else {
     lives--;
