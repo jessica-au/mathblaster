@@ -16,22 +16,27 @@ let createNewStar = () => {
 
 livesLeft.innerHTML = "Lives: 3";
 const elseConditions = () => {
-    if (lives <= 1 ) {
-        lives--;
+    if (lives !== 0) {
+        if (lives <= 1) {
+            lives--;
 
-        livesUpdate();
-        let gameOverPrompt = window.confirm('Game Over! Would you like to try again?');
+            livesUpdate();
+            let gameOverPrompt = window.confirm('Game Over! Would you like to try again?');
+            
+            if (gameOverPrompt) {
+                window.location.reload();
+                return
+            } else {
+                position2.removeEventListener('click', handlePromptQuestion2);
+                position3.removeEventListener('click', handlePromptQuestion3);position4.removeEventListener('click', handlePromptQuestion4);position5.removeEventListener('click', handlePromptQuestion5);position6.removeEventListener('click', handlePromptQuestion6);position7.removeEventListener('click', handlePromptQuestion7);position8.removeEventListener('click', handlePromptQuestion8);position9.removeEventListener('click', handlePromptQuestion9);
+        
+            };
 
-        if (gameOverPrompt) {
-            window.location.reload();
-            return
-        } else { 
-            return};
-
-    } else {
-        lives--;
-        livesUpdate();
-        alert('Oops! Try again.');
+        } else {
+            lives--;
+            livesUpdate();
+            alert('Oops! Try again.');
+        }
     }
 };
 const position1 = document.querySelector('#position1')
@@ -82,7 +87,7 @@ const handlePromptQuestion2 = (e) => {
 document.querySelector('#position2').addEventListener('click', handlePromptQuestion2);
 
 const handlePromptQuestion3 = (e) => {
-    
+
     let answer1 = prompt("5 * 9 =");
     if (testMode || answer1 == "45") {
         position3.append(orion);
