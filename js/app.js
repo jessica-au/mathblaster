@@ -2,23 +2,28 @@ const testMode = false;
 let lives = 3;
 
 const orion = document.querySelector("#orion");
-document.querySelector("#livesLeft").innerHTML = "Lives: 3";
+const livesLeft = document.querySelector('#livesLeft');
 const clickme = document.querySelector('#clickme');
-const elseConditions = () => { if (lives <= 1) {
-    lives--;
 
-    livesUpdate();
-    let gameOverPrompt = window.confirm('Game Over! Would you like to try again?');
-    
-   if (gameOverPrompt) {
-        window.location.reload();
-    return} else {};
+livesLeft.innerHTML = "Lives: 3";
+const elseConditions = () => {
+    if (lives <= 1 ) {
+        lives--;
 
-} else {
-    lives--;
-    livesUpdate();
-    alert('Oops! Try again.');
-}};
+        livesUpdate();
+        let gameOverPrompt = window.confirm('Game Over! Would you like to try again?');
+
+        if (gameOverPrompt) {
+            window.location.reload();
+            return
+        } else { };
+
+    } else {
+        lives--;
+        livesUpdate();
+        alert('Oops! Try again.');
+    }
+};
 const position2 = document.querySelector('#position2');
 const position3 = document.querySelector('#position3');
 const position4 = document.querySelector('#position4');
@@ -55,7 +60,7 @@ const handlePromptQuestion2 = (e) => {
         position2.removeEventListener('click', handlePromptQuestion2);
         position3.addEventListener('click', handlePromptQuestion3);
         return
-    } 
+    }
     elseConditions();
 };
 
@@ -71,7 +76,7 @@ const handlePromptQuestion3 = (e) => {
         position3.removeEventListener('click', handlePromptQuestion3);
         position4.addEventListener('click', handlePromptQuestion4);
         return
-    } 
+    }
     elseConditions();
 };
 
@@ -83,7 +88,7 @@ const handlePromptQuestion4 = (e) => {
         position4.removeEventListener('click', handlePromptQuestion4);
         position5.addEventListener('click', handlePromptQuestion5);
         return
-    } 
+    }
     elseConditions();
 };
 
@@ -96,7 +101,7 @@ const handlePromptQuestion5 = (e) => {
         position5.removeEventListener('click', handlePromptQuestion5);
         position6.addEventListener('click', handlePromptQuestion6);
         return
-    } 
+    }
     elseConditions();
 };
 const handlePromptQuestion6 = (e) => {
@@ -108,7 +113,7 @@ const handlePromptQuestion6 = (e) => {
         position6.removeEventListener('click', handlePromptQuestion6);
         position7.addEventListener('click', handlePromptQuestion7);
         return
-    } 
+    }
     elseConditions();
 };
 const handlePromptQuestion7 = (e) => {
@@ -120,7 +125,7 @@ const handlePromptQuestion7 = (e) => {
         position7.removeEventListener('click', handlePromptQuestion7);
         position8.addEventListener('click', handlePromptQuestion8);
         return
-    } 
+    }
     elseConditions();
 };
 const handlePromptQuestion8 = (e) => {
@@ -140,11 +145,11 @@ const handlePromptQuestion9 = (e) => {
     let answer1 = prompt("8 * 8");
     if (testMode || answer1 == "64") {
         position9.append(orion);
-        clickme.style.opacity=0;
+        clickme.style.opacity = 0;
         position9.removeEventListener('click', handlePromptQuestion8);
         alert('Congratulations on getting Orion home and clearing level 1!');
         return
-    } 
+    }
     elseConditions();
 };
 
