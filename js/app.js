@@ -1,4 +1,4 @@
-const testMode = true;
+const testMode = false;
 let lives = 3;
 
 const orion = document.querySelector("#orion");
