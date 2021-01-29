@@ -1,6 +1,20 @@
+const testMode = false;
 let lives = 3;
 
 document.querySelector("#livesLeft").innerHTML = "Lives: 3";
+const clickme = document.querySelector('#clickme');
+const elseConditions = () => { if (lives <= 1) {
+    lives--;
+
+    livesUpdate();
+    alert('Game Over!');
+    return
+
+} else {
+    lives--;
+    livesUpdate();
+    alert('Oops! Try again.');
+}};
 const position2 = document.querySelector('#position2');
 const position3 = document.querySelector('#position3');
 const position4 = document.querySelector('#position4');
@@ -31,174 +45,115 @@ window.addEventListener('load', () => {
 const handlePromptQuestion2 = (e) => {
     //console.log("position two works")
     let answer1 = prompt("4 * 4 =");
-    if (answer1 == "16") {
+    if (testMode || answer1 == "16") {
         p2.style.opacity = 1;
         p1.style.opacity = 0;
-        document.querySelector('#clickme').removeAttribute;
+        position3.append(clickme);
         position2.removeEventListener('click', handlePromptQuestion2);
         position3.addEventListener('click', handlePromptQuestion3);
         return
-    } else if (lives <= 1) {
-        lives--;
-
-        livesUpdate();
-        alert('Game Over!');
-        return
-
-    } else {
-        lives--;
-        livesUpdate();
-        alert('Oops! Try again.');
-    }
+    } 
+    elseConditions();
 };
 
 
 document.querySelector('#position2').addEventListener('click', handlePromptQuestion2);
 
-
 const handlePromptQuestion3 = (e) => {
 
     let answer1 = prompt("5 * 9 =");
-    if (answer1 == "45") {
+    if (testMode || answer1 == "45") {
         p3.style.opacity = 1;
         p2.style.opacity = 0;
+        position4.append(clickme);
         position3.removeEventListener('click', handlePromptQuestion3);
         position4.addEventListener('click', handlePromptQuestion4);
         return
-    } else if (lives <= 1) {
-        lives--;
-        livesUpdate();
-        alert('Game Over!');
-
-        return
-    } else {
-        lives--;
-        livesUpdate();
-        alert('Oops! Try again.');
-    }
+    } 
+    elseConditions();
 };
 
 const handlePromptQuestion4 = (e) => {
     let answer1 = prompt("3 * 7 =");
-    if (answer1 == "21") {
+    if (testMode || answer1 == "21") {
         p4.style.opacity = 1;
         p3.style.opacity = 0;
+        position5.append(clickme);
         position4.removeEventListener('click', handlePromptQuestion4);
         position5.addEventListener('click', handlePromptQuestion5);
         return
-    } else if (lives <= 1) {
-        lives--;
-        livesUpdate();
-        alert('Game Over!');
-        return
-    } else {
-        lives--;
-        livesUpdate();
-        alert('Oops! Try again.');
-    }
+    } 
+    elseConditions();
 };
 
 const handlePromptQuestion5 = (e) => {
 
     let answer1 = prompt("6 * 8 =");
-    if (answer1 == "48") {
+    if (testMode || answer1 == "48") {
         p5.style.opacity = 1;
         p4.style.opacity = 0;
+        position6.append(clickme);
         position5.removeEventListener('click', handlePromptQuestion5);
         position6.addEventListener('click', handlePromptQuestion6);
         return
-    } else if (lives <= 1) {
-        lives--;
-        livesUpdate();
-        alert('Game Over!');
-        return
-    } else {
-        lives--;
-        livesUpdate();
-        alert('Oops! Try again.');
-    }
+    } 
+    elseConditions();
 };
 const handlePromptQuestion6 = (e) => {
 
     let answer1 = prompt("2 * 9 =");
-    if (answer1 == "18") {
+    if (testMode || answer1 == "18") {
         p6.style.opacity = 1;
         p5.style.opacity = 0;
+        position7.append(clickme);
         position6.removeEventListener('click', handlePromptQuestion6);
         position7.addEventListener('click', handlePromptQuestion7);
         return
-    } else if (lives <= 1) {
-        lives--;
-        livesUpdate();
-        alert('Game Over!');
-        return
-    } else {
-        lives--;
-        livesUpdate();
-        alert('Oops! Try again.');
-    }
+    } 
+    elseConditions();
 };
 const handlePromptQuestion7 = (e) => {
 
     let answer1 = prompt("4 * 7");
-    if (answer1 == "28") {
+    if (testMode || answer1 == "28") {
         p7.style.opacity = 1;
         p6.style.opacity = 0;
+        position8.append(clickme);
         position7.removeEventListener('click', handlePromptQuestion7);
         position8.addEventListener('click', handlePromptQuestion8);
         return
-    } else if (lives <= 1) {
-        lives--;
-        livesUpdate();
-        alert('Game Over!');
-        return
-    } else {
-        lives--;
-        livesUpdate();
-        alert('Oops! Try again.');
-    }
+    } 
+    elseConditions();
 };
 const handlePromptQuestion8 = (e) => {
 
     let answer1 = prompt(" 8 * 3");
-    if (answer1 == "24") {
+    if (testMode || answer1 == "24") {
         p8.style.opacity = 1;
         p7.style.opacity = 0;
+        position9.append(clickme);
         position8.removeEventListener('click', handlePromptQuestion8);
         position9.addEventListener('click', handlePromptQuestion9);
         return
-    } else if (lives <= 1) {
-        lives--;
-        livesUpdate();
-        alert('Game Over!');
-        return
-    } else {
-        lives--;
-        livesUpdate();
-        alert('Oops! Try again.');
     }
+    elseConditions();
 };
 const handlePromptQuestion9 = (e) => {
 
     let answer1 = prompt("8 * 8");
-    if (answer1 == "64") {
+    if (testMode || answer1 == "64") {
         p9.style.opacity = 1;
         p8.style.opacity = 0;
+        clickme.style.opacity=0;
         position9.removeEventListener('click', handlePromptQuestion8);
+        alert('Congratulations on getting Orion home and clearing level 1!');
         return
-    } else if (lives <= 1) {
-        lives--;
-        livesUpdate();
-        alert('Game Over!');
-
-        return
-    } else {
-        lives--;
-        livesUpdate();
-        alert('Oops! Try again.');
-    }
-    // alert('Congratulations on clearing level 1!');
+    } 
+    elseConditions();
 };
+
+
+
 
 
 

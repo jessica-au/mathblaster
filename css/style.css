@@ -48,10 +48,16 @@ body {
 
 #clickme {
     opacity: 1;
-     max-width: 80px;
+     max-width: 90px;
      position: absolute;
-     padding: 5px 20px;
+     padding: 0px 20px; 
 }
+
+#clickme:hover {
+    transform: scale(1.25);
+    /* transition: transform .25s ease; */
+    }
+
 #position1 {
     top: 10px;
     left: 0px;
@@ -177,5 +183,5 @@ input {
     border-radius: 8px;
     border-style:solid;
     border-color:grey;
-
 }
+
