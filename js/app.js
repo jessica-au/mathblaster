@@ -4,10 +4,13 @@ let lives = 3;
 const orion = document.querySelector("#orion");
 const livesLeft = document.querySelector('#livesLeft');
 const clickme = document.querySelector('#clickme');
-// const goldStar = document.querySelector('#goldStar');
-// let newGoldStar = () => {
-//     goldStar.cloneNode();
-// }
+const goldStar = document.querySelector('#goldStar');
+// const star2 = goldStar.cloneNode();
+let createNewStar = () => {
+    let newStar = goldStar.cloneNode();
+    newStar.style.visibility = "visible";
+    return newStar
+}
 // const newGoldStar = () => {
 //     goldStar.cloneNode()};
 
@@ -65,8 +68,9 @@ const handlePromptQuestion2 = (e) => {
     if (testMode || answer1 == "16") {
         position2.append(orion);
         position3.append(clickme);
-        // position1.appendChild(newGoldStar());
-        // newGoldStar.style.visibility = visible;
+        // let newStar = newGoldStar()
+        position1.append(createNewStar());
+        // newStar.style.visibility = visible;
         position2.removeEventListener('click', handlePromptQuestion2);
         position3.addEventListener('click', handlePromptQuestion3);
         return
@@ -83,7 +87,7 @@ const handlePromptQuestion3 = (e) => {
     if (testMode || answer1 == "45") {
         position3.append(orion);
         position4.append(clickme);
-        
+        position2.append(createNewStar());
         position3.removeEventListener('click', handlePromptQuestion3);
         position4.addEventListener('click', handlePromptQuestion4);
         return
@@ -96,7 +100,7 @@ const handlePromptQuestion4 = (e) => {
     if (testMode || answer1 == "21") {
         position4.append(orion);
         position5.append(clickme);
-       
+        position3.append(createNewStar());
         position4.removeEventListener('click', handlePromptQuestion4);
         position5.addEventListener('click', handlePromptQuestion5);
         return
@@ -110,7 +114,7 @@ const handlePromptQuestion5 = (e) => {
     if (testMode || answer1 == "48") {
         position5.append(orion);
         position6.append(clickme);
-        
+        position4.append(createNewStar());
         position5.removeEventListener('click', handlePromptQuestion5);
         position6.addEventListener('click', handlePromptQuestion6);
         return
@@ -123,7 +127,7 @@ const handlePromptQuestion6 = (e) => {
     if (testMode || answer1 == "18") {
         position6.append(orion);
         position7.append(clickme);
-        
+        position5.append(createNewStar());
         position6.removeEventListener('click', handlePromptQuestion6);
         position7.addEventListener('click', handlePromptQuestion7);
         return
@@ -136,7 +140,7 @@ const handlePromptQuestion7 = (e) => {
     if (testMode || answer1 == "28") {
         position7.append(orion);
         position8.append(clickme);
-        
+        position6.append(createNewStar());
         position7.removeEventListener('click', handlePromptQuestion7);
         position8.addEventListener('click', handlePromptQuestion8);
         return
@@ -149,7 +153,7 @@ const handlePromptQuestion8 = (e) => {
     if (testMode || answer1 == "24") {
         position8.append(orion);
         position9.append(clickme);
-        
+        position7.append(createNewStar());
         position8.removeEventListener('click', handlePromptQuestion8);
         position9.addEventListener('click', handlePromptQuestion9);
         return
@@ -161,6 +165,7 @@ const handlePromptQuestion9 = (e) => {
     let answer1 = prompt("8 * 8");
     if (testMode || answer1 == "64") {
         position9.append(orion);
+        position8.append(createNewStar());
         clickme.style.opacity = 0;
         position9.removeEventListener('click', handlePromptQuestion8);
         alert('Congratulations on getting Orion home and clearing level 1!');
