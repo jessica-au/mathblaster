@@ -84,7 +84,10 @@ const handlePromptQuestion2 = (e) => {
 };
 
 
-document.querySelector('#position2').addEventListener('click', handlePromptQuestion2);
+// if divisible by 15 show fizzbuzz
+// if divisible by 5 show buzz
+// if divisible by 3 show fizz
+;
 
 const handlePromptQuestion3 = (e) => {
 
